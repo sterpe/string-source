@@ -1,0 +1,19 @@
+{
+  "name": "line-source",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sterpe <srterpe@gmail.com> (https://github.com/sterpe)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sterpe/line-source.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sterpe/line-source/issues"
+  },
+  "homepage": "https://github.com/sterpe/line-source#readme"
+}
