@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "clean": "rm -rf coverage es5.js",
+    "prebuild": "npm run clean && npm test",
+    "build": "babel -o es5.js index.js",
+    "pretest": "npm run lint",
+    "test": "jest"
   },
   "author": "sterpe <srterpe@gmail.com> (https://github.com/sterpe)",
   "license": "MIT",
@@ -15,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/sterpe/line-source/issues"
   },
-  "homepage": "https://github.com/sterpe/line-source#readme"
+  "homepage": "https://github.com/sterpe/line-source#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "jest-cli": "^0.6.0",
+    "standard": "^5.3.1"
+  }
 }
