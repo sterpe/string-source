@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "standard",
-    "clean": "rm -rf coverage es5.js",
-    "prebuild": "npm run clean && npm test",
-    "build": "babel -o es5.js index.js",
-    "pretest": "npm run lint",
-    "test": "jest"
+    "lint": "standard *.js __tests__/**/*.js",
+    "clean": "rm -rf coverage es5",
+    "postclean": "mkdir -p es5",
+    "prestart": "npm run clean",
+    "start": "babel -o es5/index.js index.js",
+    "poststart": "npm test",
+    "test": "npm run lint && jest"
   },
   "author": "sterpe <srterpe@gmail.com> (https://github.com/sterpe)",
   "license": "MIT",

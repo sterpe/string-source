@@ -1,10 +1,12 @@
 'use strict'
 
+const e = "Illegal '\\n' in line source."
+
 module.exports = function LineSource (line) {
   let position = 0
 
   if (line.split('\n').length > 1) {
-    throw new Error()
+    throw new Error(e)
   }
 
   return Object.defineProperty(Object.defineProperty({
