@@ -5,6 +5,8 @@ It returns a source for a line of text.
 ```javascript
 const LineSource = require('line-source')
 
+// es5: var LineSource = require('line-source/es5')
+
 const l = new LineSource('foo bar quux')
 
 l.currentChar // => 'f'
