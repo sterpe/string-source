@@ -24,12 +24,14 @@ module.exports = function LineSource (line) {
       return (position < line.length)
         ? line.charAt(position) : null
     },
+    enumerable: true,
     configurable: false
   }), 'position', {
     get: function () {
       return (position < line.length)
         ? position + 1 : null
     },
+    enumerable: true,
     configurable: false
   })
 }
