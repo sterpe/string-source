@@ -4,13 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "standard *.js __tests__/**/*.js",
-    "clean": "rm -rf coverage es5",
-    "postclean": "mkdir -p es5",
-    "prestart": "npm run clean",
-    "start": "babel -o es5/index.js index.js",
-    "poststart": "npm test",
-    "test": "npm run lint && jest"
+    "test": "standard && jest"
   },
   "author": "sterpe <srterpe@gmail.com> (https://github.com/sterpe)",
   "license": "MIT",
@@ -23,8 +17,7 @@
   },
   "homepage": "https://github.com/sterpe/line-source#readme",
   "devDependencies": {
-    "babel": "^5.8.23",
-    "jest-cli": "^0.6.0",
+    "jest-cli": "^0.6.1",
     "standard": "^5.3.1"
   }
 }
