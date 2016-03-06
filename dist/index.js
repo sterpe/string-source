@@ -1,13 +1,7 @@
 'use strict';
 
-var e = "Illegal '\\n' in line source.";
-
-module.exports = function LineSource(line) {
+module.exports = function StringSource(line) {
   var position = 0;
-
-  if (line.split('\n').length > 1) {
-    throw new Error(e);
-  }
 
   return Object.defineProperty(Object.defineProperty({
     peekChar: function peekChar() {

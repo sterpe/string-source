@@ -1,13 +1,7 @@
 'use strict'
 
-const e = "Illegal '\\n' in line source."
-
-module.exports = function LineSource (line) {
+module.exports = function StringSource (line) {
   let position = 0
-
-  if (line.split('\n').length > 1) {
-    throw new Error(e)
-  }
 
   return Object.defineProperty(Object.defineProperty({
     peekChar: function () {

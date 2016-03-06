@@ -1,15 +1,15 @@
-# line-source
+# string-source
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## What is it?
 
-It returns a source for a line of text.
+It returns a source for a string of text.
 
 ```javascript
-const LineSource = require('line-source')
+const StringSource = require('string-source')
 
-const l = new LineSource('foo bar quux')
+const l = new StringSource('foo bar quux')
 
 l.currentChar // => 'f'
 l.position // => 1
@@ -19,17 +19,14 @@ l.nextChar() // => 'o'
 // All methods and properties return `null' once the 
 // currentChar has moved past the end of the source
 // string.
-//
-// An error is thrown if the input string contains
-// unescaped newline characters (`\n`).
 ```
 
 ## How do I work on it?
 
 ### development
 ```
-git clone https://github.com/sterpe/line-source.git
-cd line-source
+git clone https://github.com/sterpe/string-source.git
+cd string-source
 make
 ```
 

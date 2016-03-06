@@ -1,6 +1,6 @@
 {
-  "name": "line-source",
-  "version": "0.2.4",
+  "name": "string-source",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "scripts": {
     "make": "make $@",
@@ -14,19 +14,18 @@
     "husky": "^0.11.1",
     "jasmine-reporters": "^1.0.2",
     "jest-cli": "^0.9.0",
-    "standard": "^6.0.5",
-    "watch": "^0.17.1"
+    "standard": "^6.0.5"
   },
-  "description": "It returns a source for a line of text.",
+  "description": "It returns a source for a string of text.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sterpe/line-source.git"
+    "url": "https://github.com/sterpe/string-source.git"
   },
   "author": "sterpe <srterpe@gmail.com> (https://github.com/sterpe)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sterpe/line-source/issues"
+    "url": "https://github.com/sterpe/string-source/issues"
   },
-  "homepage": "https://github.com/sterpe/line-source",
+  "homepage": "https://github.com/sterpe/string-source",
   "dependencies": {}
 }
