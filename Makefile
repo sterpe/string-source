@@ -17,7 +17,6 @@ LINT = standard
 TEST = jest -c $(JESTRC) $(JEST_FLAGS)
 
 all: i test clean
-	$(postinstall-message)
 
 configure:
 ifneq "$(shell echo $(NODE_VERSION) | sed 's/^v\(.\).*/\1/')" "$(NVMRC)"
