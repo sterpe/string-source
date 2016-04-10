@@ -35,4 +35,4 @@ PreCommit:
   Standard:
     enabled: true
     required_executable: 'node_modules/.bin/standard'
-    command ['node_modules/.bin/standard']
+    command: ['node_modules/.bin/standard']

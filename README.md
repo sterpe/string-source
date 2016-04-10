@@ -30,10 +30,6 @@ cd string-source
 make
 ```
 
-### build
-```
-make build
-```
 ### test
 ```
 make JEST_FLAGS=--coverage test
