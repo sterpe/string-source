@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = function StringSource (line) {
-  let position = 0
+  var position = 0
 
   return Object.defineProperty(Object.defineProperty({
     peekChar: function () {
